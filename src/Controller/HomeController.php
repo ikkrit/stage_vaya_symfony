@@ -24,11 +24,4 @@ class HomeController extends AbstractController
         ]);
     }
 
-    #[Route('/portefolio', name: 'app_portefolio')]
-    public function portefolio(): Response
-    {
-        return $this->render('portefolio/portefolio.html.twig', [
-            'controller_name' => 'HomeController',
-        ]);
-    }
 }

@@ -6,11 +6,9 @@
  */
 
 // any CSS you import will output into a single css file (app.css in this case)
-import './styles/app.css';
 import './styles/style.css';
 import './styles/nav.css';
-import './styles/header.css';
-import './styles/main.css';
+import './styles/index.css';
 import './styles/footer.css';
 import './styles/about.css';
 import './styles/portefolio.css';

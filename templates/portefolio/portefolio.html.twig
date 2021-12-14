@@ -1,10 +1,7 @@
-<!-- PORTEFOLIO -->
-<title>{% block title %}Portefolio{% endblock %}</title>
-{% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
-        {% endblock %}
+{% extends 'base.html.twig' %}
 
-{% include "nav/nav.html.twig" %}
+{% block title %}Portefolio{% endblock %}
+
 {% block body %}
 <section class="section-galery">
     <form>
@@ -47,48 +44,24 @@
             <img src="{{ asset('img/slide/2.jpg') }}" alt="">
         </div>
       </div>
-        <!--<div class="first-galery">
-            <div class="contain-img">
-                <img src="{{ asset('assets/img/renardbleu_jpg__1671819.jpg') }}" alt="">
-                <p>Description</p>
-            </div>
-            <div class="contain-img">
-                <img src="{{ asset('assets/img/renardlune_jpg__1643232.jpg') }}" alt="">
-                <p>Description</p>
-            </div>
-            <div class="contain-img">
-                <img src="{{ asset('assets/img/timetowitch_jpg__1755826.jpg') }}" alt="">
-                <p>Description</p>
-            </div>
-            <div class="contain-img">
-                <img src="{{ asset('assets/img/belacorne_jpg__1623931.jpg') }}" alt="">
-                <p>Description</p>
-            </div>
-            <div class="contain-img">
-                <img src="{{ asset('assets/img/renardbleu_jpg__1671819.jpg') }}" alt="">
-                <p>Description</p>
-            </div>
-            <div class="contain-img">
-                <img src="{{ asset('assets/img/renardbleu_jpg__1671819.jpg') }}" alt="">
-                <p>Description</p>
-            </div>
-        </div>-->
     </div>
 </section>
+
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 <script>
     var grid = document.querySelector('.grid');
 
-var msnry = new Masonry( grid, {
-  itemSelector: '.grid-item',
-  columnWidth: '.grid-sizer',
-  percentPosition: true,
-  gutter: 10
-});
+    var msnry = new Masonry( grid, {
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true,
+    gutter: 10
+    });
 
-imagesLoaded( grid ).on( 'progress', function() {
-  msnry.layout();
-});
-
+    imagesLoaded( grid ).on( 'progress', function() {
+     msnry.layout();
+    });
 </script>
 {% endblock %}
-{% include "footer/footer.html.twig" %}
+

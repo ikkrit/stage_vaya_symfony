@@ -1,10 +1,7 @@
-<!--    ABOUT VAYOUNETTE -->
+{% extends 'base.html.twig' %}
 
-<title>{% block title %}A propos de Vayounette{% endblock %}</title>
-{% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
-        {% endblock %}
-{% include "nav/nav.html.twig" %}
+{% block title %}A propos de Vayounette{% endblock %}
+
 {% block body %}
 <section class="about-vayounette">
     <div class="about-contain">
@@ -22,4 +19,4 @@
     </div>
 </section>
 {% endblock %}
-{% include "footer/footer.html.twig" %}
+

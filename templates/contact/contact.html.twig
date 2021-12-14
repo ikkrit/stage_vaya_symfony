@@ -1,9 +1,5 @@
-<title>{% block title %}Contact{% endblock %}</title>
-{% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
-        {% endblock %}
-
-{% include "nav/nav.html.twig" %}
+{% extends 'base.html.twig' %}
+{% block title %}Contact{% endblock %}
 {% block body %}
     <section class="contact">
         <div class="main-contact">
@@ -11,4 +7,4 @@
         </div>
     </section>
 {% endblock %}
-{% include "footer/footer.html.twig" %}
+

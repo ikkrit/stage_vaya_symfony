@@ -2,5 +2,167 @@
 
 {% block title %}Bienvenue sur le site de Vayounette Illustration{% endblock %}
 
-{% block body %}{% endblock %}
+{% block body %}
+
+<section class="section-slider">
+    <div class="header-slider">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <input type="radio" name="radio-btn" id="radio5">
+
+        <div class="slide first">
+            <img id="slide-img" src="{{ asset('img/slide/1.png') }}" alt="">
+        </div>
+        <div class="slide">
+            <img id="slide-img" src="{{ asset('img/slide/2.jpg') }}" alt="">
+        </div>
+        <div class="slide">
+            <img id="slide-img" src="{{ asset('img/slide/3.jpg') }}" alt="">
+        </div>
+        <div class="slide">
+            <img id="slide-img" src="{{ asset('img/slide/4.jpg') }}" alt="">
+        </div>
+        <div class="slide">
+            <img id="slide-img" src="{{ asset('img/slide/5.jpg') }}" alt="">
+        </div>
+
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+            <div class="auto-btn5"></div>
+        </div>      
+    </div>
+
+    <div class="navigation-manuel">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+        <label for="radio5" class="manual-btn"></label>
+    </div>
+
+    <div class="slider-present">
+        <h1>Vayounette Illustration</h1>
+        <h3>Bienvenue bienvenue</h3>
+        <a href="#" class="btn-vaya">Decouvrez mon univer</a>
+    </div>
+</section>
+
+<section class="main">
+    <div class="welcome">
+        <h2 class="welcome-title">Vayounette</h2>
+        <p class="welcome-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, rem possimus! Nisi architecto iure ab deserunt cum. Odit doloribus fugit perspiciatis laudantium iste molestias, et praesentium vero, facere quod eius!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, rem possimus! Nisi architecto iure ab deserunt cum. Odit doloribus fugit perspiciatis laudantium iste molestias, et praesentium vero, facere quod eius!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, rem possimus! Nisi architecto iure ab deserunt cum. Odit doloribus fugit perspiciatis laudantium iste molestias, et praesentium vero, facere quod eius!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, rem possimus! Nisi architecto iure ab deserunt cum. Odit doloribus fugit perspiciatis laudantium iste molestias, et praesentium vero, facere quod eius!</p>
+
+        <div class="card-contain">
+            <div class="card card1">
+                <div class="card-content">
+                    <h2 class="card-title">title title title title</h2>
+                    <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet laboriosam cum odit totam facilis </p>
+                    <a href="#" class="card-button">Decouvrer</a>
+                </div>
+            </div>
+            <div class="card card2">
+                <div class="card-content">
+                    <h2 class="card-title">title title title title</h2>
+                    <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet laboriosam cum odit totam facilis </p>
+                    <a href="#" class="card-button">Decouvrer</a>
+                </div>
+            </div>
+            <div class="card card3">
+                <div class="card-content">
+                    <h2 class="card-title">title title title title</h2>
+                    <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet laboriosam cum odit totam facilis </p>
+                    <a href="#" class="card-button">Decouvrer</a>
+                </div>
+            </div>
+            <div class="card card4">
+                <div class="card-content">
+                    <h2 class="card-title">title title title title</h2>
+                    <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet laboriosam cum odit totam facilis </p>
+                    <a href="#" class="card-button">Decouvrer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="client">
+    <h2 class="welcome-title">References</h2>
+    <div class="carousel-contain-slider">
+        <div class="carousel-slide-track">
+            <!--    carousel A  -->
+            <div class="carousel-slide">
+                <img src="{{ asset('img/icon/Logo_Hachette.png') }}" alt="">
+            </div>
+            <div class="carousel-slide">
+                <img src="{{ asset('img/icon/larousse_logo.png') }}" alt="">
+            </div>
+            <div class="carousel-slide">
+                <img src="{{ asset('img/icon/playbac_logo.png') }}" alt="">
+            </div>
+            <div class="carousel-slide">
+                <img src="{{ asset('img/icon/Logo_Hachette.png') }}" alt="">
+            </div>
+            <div class="carousel-slide">
+                <img src="{{ asset('img/icon/larousse_logo.png') }}" alt="">
+            </div>
+            <div class="carousel-slide">
+                <img src="{{ asset('img/icon/playbac_logo.png') }}" alt="">
+            </div>
+            <div class="carousel-slide">
+                <img src="{{ asset('img/icon/Logo_Hachette.png') }}" alt="">
+            </div>
+            <div class="carousel-slide">
+                <img src="{{ asset('img/icon/larousse_logo.png') }}" alt="">
+            </div>
+            <div class="carousel-slide">
+                <img src="{{ asset('img/icon/playbac_logo.png') }}" alt="">
+            </div>
+            <!--    carousel A  -->
+            <div class="carousel-slide">
+                <img src="{{ asset('img/icon/Logo_Hachette.png') }}" alt="">
+            </div>
+            <div class="carousel-slide">
+                <img src="{{ asset('img/icon/larousse_logo.png') }}" alt="">
+            </div>
+            <div class="carousel-slide">
+                <img src="{{ asset('img/icon/playbac_logo.png') }}" alt="">
+            </div>
+            <div class="carousel-slide">
+                <img src="{{ asset('img/icon/Logo_Hachette.png') }}" alt="">
+            </div>
+            <div class="carousel-slide">
+                <img src="{{ asset('img/icon/larousse_logo.png') }}" alt="">
+            </div>
+            <div class="carousel-slide">
+                <img src="{{ asset('img/icon/playbac_logo.png') }}" alt="">
+            </div>
+            <div class="carousel-slide">
+                <img src="{{ asset('img/icon/Logo_Hachette.png') }}" alt="">
+            </div>
+            <div class="carousel-slide">
+                <img src="{{ asset('img/icon/larousse_logo.png') }}" alt="">
+            </div>
+            <div class="carousel-slide">
+                <img src="{{ asset('img/icon/playbac_logo.png') }}" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    var counter = 1;
+    setInterval(function() {
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4) {
+            counter = 1;
+        }
+    }, 4000);
+</script>
+{% endblock %}
 

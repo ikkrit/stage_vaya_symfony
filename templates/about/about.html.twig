@@ -1,0 +1,25 @@
+<!--    ABOUT VAYOUNETTE -->
+
+<title>{% block title %}A propos de Vayounette{% endblock %}</title>
+{% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+{% include "nav/nav.html.twig" %}
+{% block body %}
+<section class="about-vayounette">
+    <div class="about-contain">
+        <h2>A propos de Vayounette</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum exercitationem expedita quis reprehenderit. Hic debitis eos, obcaecati ad commodi voluptates maiores, quaerat perferendis consequatur beatae vero deleniti, quo cum repellendus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum exercitationem expedita quis reprehenderit. Hic debitis eos, obcaecati ad commodi voluptates maiores, quaerat perferendis consequatur beatae vero deleniti, quo cum repellendus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum exercitationem expedita quis reprehenderit. Hic debitis eos, obcaecati ad commodi voluptates maiores, quaerat perferendis consequatur beatae vero deleniti, quo cum repellendus.</p>
+    </div>
+    <div class="about-img">
+        <img src="{{ asset('img/welcome1.jpg') }}" alt="">
+        <img src="{{ asset('img/welcome2.jpg') }}" alt="">
+        <img src="{{ asset('img/welcome3.jpg') }}" alt="">
+    </div>
+    <div class="about-exemple">
+        <h4>Exemple</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum beatae veritatis quis recusandae voluptate voluptatum voluptas, obcaecati qui laboriosam, corrupti deserunt asperiores earum. Ipsum illo maiores expedita odio aspernatur optio?</p>
+    </div>
+</section>
+{% endblock %}
+{% include "footer/footer.html.twig" %}

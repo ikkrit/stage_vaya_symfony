@@ -1,0 +1,94 @@
+<!-- PORTEFOLIO -->
+<title>{% block title %}Portefolio{% endblock %}</title>
+{% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+{% include "nav/nav.html.twig" %}
+{% block body %}
+<section class="section-galery">
+    <form>
+        <select>
+        <option>4-6 ans </option>
+        <option>4-6 ans </option>
+        <option>4-6 ans </option>
+        <option>4-6 ans </option>
+
+        </select>
+    </form>
+   <div class="galery-contain">
+    <div class="grid">
+        <div class="grid-sizer"></div>
+        <div class="grid-item">
+            <img src="{{ asset('img/welcome1.jpg') }}" alt="">
+        </div>
+        <div class="grid-item">
+            <img src="{{ asset('img/welcome2.jpg') }}" alt="">
+        </div>
+        <div class="grid-item">
+            <img src="{{ asset('img/welcome3.jpg') }}" alt="">
+        </div>
+        <div class="grid-item">
+            <img src="{{ asset('img/welcome4.jpg') }}" alt="">
+        </div>
+        <div class="grid-item">
+            <img src="{{ asset('img/slide/1.png') }}" alt="">
+        </div>
+        <div class="grid-item">
+            <img src="{{ asset('img/welcome1.jpg') }}" alt="">
+        </div>
+        <div class="grid-item">
+            <img src="{{ asset('img/welcome4.jpg') }}" alt="">
+        </div>
+        <div class="grid-item">
+            <img src="{{ asset('img/welcome3.jpg') }}" alt="">
+        </div>
+        <div class="grid-item">
+            <img src="{{ asset('img/slide/2.jpg') }}" alt="">
+        </div>
+      </div>
+        <!--<div class="first-galery">
+            <div class="contain-img">
+                <img src="{{ asset('assets/img/renardbleu_jpg__1671819.jpg') }}" alt="">
+                <p>Description</p>
+            </div>
+            <div class="contain-img">
+                <img src="{{ asset('assets/img/renardlune_jpg__1643232.jpg') }}" alt="">
+                <p>Description</p>
+            </div>
+            <div class="contain-img">
+                <img src="{{ asset('assets/img/timetowitch_jpg__1755826.jpg') }}" alt="">
+                <p>Description</p>
+            </div>
+            <div class="contain-img">
+                <img src="{{ asset('assets/img/belacorne_jpg__1623931.jpg') }}" alt="">
+                <p>Description</p>
+            </div>
+            <div class="contain-img">
+                <img src="{{ asset('assets/img/renardbleu_jpg__1671819.jpg') }}" alt="">
+                <p>Description</p>
+            </div>
+            <div class="contain-img">
+                <img src="{{ asset('assets/img/renardbleu_jpg__1671819.jpg') }}" alt="">
+                <p>Description</p>
+            </div>
+        </div>-->
+    </div>
+</section>
+<script>
+    var grid = document.querySelector('.grid');
+
+var msnry = new Masonry( grid, {
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  percentPosition: true,
+  gutter: 10
+});
+
+imagesLoaded( grid ).on( 'progress', function() {
+  msnry.layout();
+});
+
+</script>
+{% endblock %}
+{% include "footer/footer.html.twig" %}

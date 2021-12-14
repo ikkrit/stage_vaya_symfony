@@ -1,0 +1,50 @@
+/*  FOOTER  */
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 99%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    background-color: #7f7f7f;
+    box-shadow:4px 4px 6px #888;
+}
+
+#social-img {
+    width: 8rem;
+}
+
+footer .social {
+    padding-bottom: 2rem;
+}
+
+footer .social a {
+    font-size: 2rem;
+    margin: 0 2rem;
+}
+
+footer .footer-list {
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+footer .footer-list li {
+    display: inline-block;
+    padding: 0 1.5rem;
+}
+
+footer .copyright {
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: #fff;
+}
+
+.vayounette-mail {
+    font-size: 3rem;
+    color: #fff;
+}
+

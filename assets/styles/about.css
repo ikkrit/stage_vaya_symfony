@@ -1,0 +1,11 @@
+/*  ABOUT VAYOUNETTE    */
+
+.about-vayounette {
+    width: 99%;
+    margin: auto;
+    background-color: tomato;
+}
+
+.about-img img {
+    width: 30%;
+}

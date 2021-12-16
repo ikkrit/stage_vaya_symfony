@@ -7,8 +7,8 @@
     width: 99%;
     margin: auto;
     align-items: center;
-    background-image: url(../../public/img/slide/5.jpg);
-    background-size: center;
+    background-image: url(../../public/img/wall_contact.png);
+    background-position: center;
     background-size: cover;
     margin-bottom: 2rem;
     box-shadow:4px 4px 6px #888;
@@ -17,7 +17,7 @@
 .contact-contain {
     width: 70%;
     margin: auto;
-    background-color: rgb(128, 128, 128, 0.4);
+    background-color: rgb(128, 128, 128, 0.6);
     margin-bottom: 2rem;
     color: #fff;
 }
@@ -26,7 +26,7 @@
     width: 70%;
     font-size: 2rem;
     text-align: center;
-    background-color: rgb(128, 128, 128, 0.6);
+    background-color: rgb(128, 128, 128, 0.8);
     color: #fff;
     margin-top: 1rem;
     padding: 1rem 0 1rem 0;
@@ -51,13 +51,13 @@
     color: #fff;
 }
 
- #contact_nom, #contact_email, #contact_sujet {
+ #contact_name, #contact_email, #contact_sujet {
      width: 100%;
      height: 2rem;
      margin: 1rem;
  }
 
- #contact_message {
+ #contact_text {
     width: 100%;
     height: 5rem;
     margin: 1rem;
@@ -68,8 +68,13 @@
  }
 
  .contact-submit button {
+    background-color: var(--button-color);
     font-size: 2rem;
-    padding: 1rem;
+    padding: 0.8rem;
     border-radius: 10px;
+ }
+
+ .contact-submit button:hover {
+     background-color: var(--button-hover);
  }
 

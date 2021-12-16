@@ -10,7 +10,9 @@ footer {
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 2rem;
-    background-color: #7f7f7f;
+    background-image: url(../../public/img/back_footer.png);
+    background-position: center;
+    background-size: cover;
     box-shadow:4px 4px 6px #888;
 }
 
@@ -34,7 +36,7 @@ footer .footer-list {
 
 footer .footer-list li {
     display: inline-block;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
 }
 
 footer .copyright {

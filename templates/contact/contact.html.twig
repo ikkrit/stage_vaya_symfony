@@ -9,7 +9,7 @@
         <div class="contact-contain">
             {{ form_start(form) }}
             <div class="contact-name form-group">
-                {{ form_row(form.nom) }}
+                {{ form_row(form.name) }}
             </div>
             <div class="contact-email form-group">  
                 {{ form_row(form.email) }}
@@ -18,7 +18,7 @@
                 {{ form_row(form.sujet) }}
             </div>                    
             <div class="contact-message form-group">
-                {{ form_row(form.message) }}
+                {{ form_row(form.text) }}
             </div>
 
             {{ form_rest(form) }}

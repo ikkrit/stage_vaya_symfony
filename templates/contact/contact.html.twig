@@ -1,9 +1,32 @@
 {% extends 'base.html.twig' %}
 {% block title %}Contact{% endblock %}
 {% block body %}
-    <section class="contact">
-        <div class="main-contact">
-            <h2>Contact</h2>
+    <section class="contact-page">
+        <div class="contact-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iste provident et, placeat maiores, culpa ex tempore nam molestias, odit sapiente ipsam hic magni? Doloribus aliquid explicabo earum quidem possimus?</p>
+        </div>
+        <div class="contact-title"><h2>Contact</h2></div>
+        <div class="contact-contain">
+            {{ form_start(form) }}
+            <div class="contact-name form-group">
+                {{ form_row(form.nom) }}
+            </div>
+            <div class="contact-email form-group">  
+                {{ form_row(form.email) }}
+            </div>    
+            <div class="contact-sujet form-group">
+                {{ form_row(form.sujet) }}
+            </div>                    
+            <div class="contact-message form-group">
+                {{ form_row(form.message) }}
+            </div>
+
+            {{ form_rest(form) }}
+            <div class="contact-submit form-group">
+                <button type="submit">Soumettre</button>
+            </div>
+
+            {{ form_end(form) }}
         </div>
     </section>
 {% endblock %}

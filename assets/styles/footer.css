@@ -10,9 +10,7 @@ footer {
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 2rem;
-    background-image: url(../../public/img/back_footer.png);
-    background-position: center;
-    background-size: cover;
+    background: center / cover no-repeat url(../../public/img/back_footer.png);
     box-shadow:4px 4px 6px #888;
 }
 

@@ -7,9 +7,7 @@
     width: 99%;
     margin: auto;
     align-items: center;
-    background-image: url(../../public/img/wall_contact.png);
-    background-position: center;
-    background-size: cover;
+    background: center / cover no-repeat url('../../public/img/wall_contact.png');
     margin-bottom: 2rem;
     box-shadow:4px 4px 6px #888;
 }
@@ -35,20 +33,25 @@
 
 .contact-text {
     width: 70%;
-    background-color: #fff;
+    color: #fff;
+    background-color: rgb(128, 128, 128, 0.6);
     margin-top: 5rem;
     margin-bottom: 2rem;
     text-align: center;
     padding: 2rem;
+    border-radius: 1rem;
 }
 
 .form-group {
     width: 60%;
     padding: 1rem;
-    font-size: 2rem;
     font-weight: 700;
     margin: auto;
-    color: #fff;
+}
+
+.form-group h3 {
+    font-size: 2rem;
+    padding-left: 1rem;
 }
 
  #contact_name, #contact_email, #contact_sujet {
@@ -71,7 +74,7 @@
     background-color: var(--button-color);
     font-size: 2rem;
     padding: 0.8rem;
-    border-radius: 10px;
+    border-radius: 1rem;
  }
 
  .contact-submit button:hover {

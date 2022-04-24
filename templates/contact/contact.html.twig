@@ -1,37 +1,66 @@
 {% extends 'base.html.twig' %}
 {% block title %}Contact{% endblock %}
 {% block body %}
-    <section class="contact-page">
-        <div class="contact-text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iste provident et, placeat maiores, culpa ex tempore nam molestias, odit sapiente ipsam hic magni? Doloribus aliquid explicabo earum quidem possimus?</p>
-        </div>
-        <div class="contact-title"><h2>Contact</h2></div>
-        <div class="contact-contain">
+<section class="section-contact">
+    <div class="contact-contain">
+        <h2 class="contact-title">Contact Moi</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde beatae rerum perspiciatis nemo cumque doloremque eos? Molestias, culpa sequi. Repudiandae officia laudantium maiores modi illum impedit a repellat deleniti neque!</p>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-box">
+                    <div class="logo-info"><img src="https://img.icons8.com/material-sharp/48/000000/info.png"/></div>
+                    <div class="text-info">
+                        <h3>Titre de l'info</h3>
+                        <p>Texte de l'info info info info</p>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <div class="logo-info"><img src="https://img.icons8.com/material-rounded/48/000000/mail.png"/></div>
+                    <div class="text-info">
+                        <h3>Email</h3>
+                        <p>Vayounette@test.fr</p>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <div class="logo-info"><img src="https://img.icons8.com/material-two-tone/48/000000/create-icon.png"/></div>
+                    <div class="text-info">
+                        <h3>Social</h3>
+                        <p>Texte de l'info info info info</p>
+                    </div>
+                </div>
+            </div>   
+            <div class="form-container">
+                <h2>Formulaire</h2>
             {{ form_start(form) }}
-            <div class="contact-name form-group">
-                <h3>Nom</h3>
-                {{ form_widget(form.name) }}
-            </div>
-            <div class="contact-email form-group">  
-                <h3>Email</h3>
-                {{ form_widget(form.email) }}
-            </div>    
-            <div class="contact-sujet form-group">
-                <h3>Sujet</h3>
-                {{ form_widget(form.sujet) }}
-            </div>                    
-            <div class="contact-message form-group">
-                <h3>Message</h3>
-                {{ form_widget(form.text) }}
-            </div>
 
-            {{ form_rest(form) }}
-            <div class="contact-submit form-group">
-                <button type="submit">Soumettre</button>
-            </div>
+                <div class="input-box">
+                    <span class="text-contact"><h3>Votre Nom</h3></span>
+                    {{ form_widget(form.name) }}
+                </div>
+                <div class="input-box">  
+                    <span class="text-contact"><h3>Votre Email</h3></span>
+                    {{ form_widget(form.email) }}
+                </div>    
+                <div class="input-box">
+                    <span class="text-contact"><h3>Sujet</h3></span>
+                    {{ form_widget(form.sujet) }}
+                </div>                    
+                <div class="input-box">
+                    <span class="text-contact"><h3>Votre Message</h3></span>
+                    {{ form_widget(form.text) }}
+                </div>
 
-            {{ form_end(form) }}
+                {{ form_rest(form) }}
+                <div class="contact-submit input-box">
+                    <button class="text-message" type="submit">Soumettre</button>
+                </div>
+
+                {{ form_end(form) }}
+
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 {% endblock %}
 
